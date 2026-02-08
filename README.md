@@ -1,1 +1,3 @@
-# legacy-mern-app
+#LEGACY MERN APP
+
+What NOT to do in projects.

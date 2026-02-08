@@ -1,0 +1,105 @@
+SDLC - software Development Life Cycle
+1. Requirement Gathering
+2. Analysis
+3. Design
+4. Development
+5. Testing
+6. Deployment
+7. Maintenance
+
+2 core models = Agile = Incremental + Iterative
+
+4 core values - Agile Manifesto
+1. Individuals and Interactions over processes and tools
+2. Customer Collaboration over contract negotiation
+3. Responding to change over following a plan
+4. Working software over documentation
+
+12 Principles
+1. Delivery and feedback
+2. Collaboration and People
+3. Simplicity
+4. Self-organizing teams
+
+
+Scrum is framework used to implement agile
+4 parts:
+Roles
+Ceremonies
+Artifacts
+Sprints
+
+Roles:
+1. Product Owner
+	owns the "WHAT"
+	maintain product backlog (prioritized list of product features (stories))
+	accepts or rejects completed work or will give change requests
+2. Scrum Master
+	owns the "HOW WE WORK"
+	facilitates the ceremonies
+	removes blockers
+	coaches the team on scrum
+	prepares the burn-up / burn-down charts
+3. Dev Team
+	owns the "HOW TO DEVELOP"
+	design, build, test, deploy
+	self-organizing
+	cross-functional
+
+Ceremonies:
+1. Sprint Planning : decide on what to build and how much to build
+2. Daily Stand - up (15 min)
+3. Spring Review : demo to stakeholders
+4. Sprint Retrospective: inspect and adapt
+
+Artifacts:
+1. Product Backlog
+2. Sprint Plan
+3. burn-up / burn-down charts
+
+Sprint: 2 - 4 weeks
+
+Technical User Stories
+Ex: 
+As a customer 
+I want to reset my password
+So that I can regain access to my account 
+
+As a developer
+I want a JWT - based authentication
+So that my APIs are stateless and secure
+----------------------------
+
+Given user is registered
+When password reset is requested
+Then email a reset link
+And the link expires in 10 minutes
+
+
+----------
+Product Backlog
+Epic 1: User Authentication System
+
+User Stories
+1. User Registration
+2. Login
+3. Logout
+4. Password Reset
+5. Token refreshing
+
+Login:
+1. create the api endpoint
+2. input validation
+3. password hashing
+4. JWT generation
+5. Error handling
+6. Unit testing
+
+Acceptance Criteria
+Given valid credentials
+when Login Api is called
+Then JWT Token is generated
+And Token expires in 1 hour
+
+
+ 

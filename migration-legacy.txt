@@ -1,0 +1,155 @@
+Backend heavy system:
+-> backend does everything
+-> frontend = screens, api calls
+
+frontend
+1. jsp / html
+2. minimal javascript
+
+backend
+1. calculations
+2. authorization
+3. authentication
+4. eligibility rules
+5. reportings
+6. validation
+etc.
+
+Technical Debt = shortcuts taken during development, cause issues later
+Tight Coupling
+
+Native Integration
+
+Migration Blockers:
+1. Stored Procedures
+2. Native C integration
+3. Hardcoded configs
+4. No automated tests
+5. tight coupling
+=============================================
+Backend
+Step 1. identify the backend entry point
+1. single app?
+2. config externalized?
+3. error handling?
+4. environment seperation?
+5. monolithic?
+ 
+Step 2: understand runtime and deployment
+1. is there docker?
+2. is there Ci/cd?
+3. proper config for the servers?
+4. scaling issues?
+5. healthchecks?
+
+Step 3: Analyze routes
+1. business logic?
+2. schema validation?
+3. callback async?
+4. route loosely coupled or tightly coupled?
+5. business validations
+
+Step 4: analyze the service layer
+1. hardcoded rules?
+2. config-driven logic?
+3. promises, async/await?
+4. unit test
+
+Step 5: Analyze native engine
+1. no documentation
+2. business - critical logic?
+
+Step 6: analyze DB
+1. schema validation?
+2. indexes?
+3. Ownership
+4. Versioning
+
+Step 7: Identify tight coupling points
+
+Step 8: Trace a request end-to-end
+1. where is the validation?
+2. where the business logic is placed?
+3. number of layers present and skipped
+
+Step 9: analyze the frontend
+1. error handling
+2. number of layers
+3. seperation on concerns
+4. hardcoded values
+
+Step 10: Check if it is migration ready
+1. go through the checklist
+
+------------------------------------------
+Migration Checklist
+1. Architecture
+	is it monolithic
+	all modules seperated?
+2. Code Quality
+	business logic location
+	excessive tight coupling
+	dead code present
+	unit testcases
+	service abstraction
+	hardcoded rules
+	config setup
+	integration testing
+	regression safety
+3. Database
+	shared resources (tables/collections)
+	stored procedures
+	db triggers
+	schema validation
+	schema versioning
+	ownership clarity
+4. Integrations
+	native engines
+	file-based integrations
+	legacy messaging queues
+	legacy third party dependencies
+5. Operations
+	manual deployment
+	ci/cd?
+	monitoring
+	logging
+	health checks
+6. Knowledge Readiness
+	documentation available
+	domain experts available
+	
+
+-------------------------------------------
+What should be done first?
+1. Add test case around critical flows
+2. introduce config management
+3. wrap the native engine
+4. centralize the business logic
+5. define domain boundaries
+6. set up ci/cd pipeline
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
